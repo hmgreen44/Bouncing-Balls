@@ -3,8 +3,9 @@ html, body {
   }
   
   html {
-    font-family: Helvetica
-    height: 100%;
+    font-family: Helvetica;
+    Height: 100%
+    
   }
   
   body {
@@ -14,12 +15,18 @@ html, body {
   
   h1 {
     font-size: 2rem;
-    letter-spacing: -1px;
+    letter-spacing: 1px;
     position: absolute;
     margin: 0;
-    top: -4px;
+    top: 3px;
     right: 5px;
     text-shadow: 0 0 4px blue;
     color: white;
   }
-  
+  p {
+    position: absolute;
+    margin: 0;
+    top: 35px;
+    right: 5px;
+    color: #aaa;
+  }

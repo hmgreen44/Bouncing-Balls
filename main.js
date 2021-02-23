@@ -5,7 +5,6 @@ const ctx = canvas.getContext('2d');
 
 const width = canvas.width = window.innerWidth;
 const height = canvas.height = window.innerHeight;
-
 // function to generate random number
 
 function random(min, max) {
@@ -66,7 +65,11 @@ Ball.prototype.collisionDetect = function() {
       const distance = Math.sqrt(dx * dx + dy * dy);
 
       if (distance < this.size + balls[j].size) {
-        balls[j].color = this.color = 'rgb(' + random(0,255) + ',' + random(0,255) + ',' + random(0,255) +')';
+        balls[j].size = random(5,20);
+      }
+      if (distance < this.size + balls[j].size){
+
+
       }
     }
   }
@@ -85,7 +88,7 @@ while(balls.length < 25) {
     random(0 + size,height - size),
     random(-7,7),
     random(-7,7),
-    'rgb(' + random(0,255) + ',' + random(0,255) + ',' + random(0,255) +')',
+    'rgb(' + (0,255,0) + ',' + (0,30,0) + ',' + (0,255) +')',
     size
   );
   balls.push(ball);
